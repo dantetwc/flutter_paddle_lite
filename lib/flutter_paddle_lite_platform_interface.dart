@@ -26,4 +26,8 @@ abstract class FlutterPaddleLitePlatform extends PlatformInterface {
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
+
+  Future<void> setModelPath(String modelPath) {
+    throw UnimplementedError('setModelPath() has not been implemented.');
+  }
 }

@@ -11,7 +11,13 @@ class MethodChannelFlutterPaddleLite extends FlutterPaddleLitePlatform {
 
   @override
   Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
+    final version =
+        await methodChannel.invokeMethod<String>('getPlatformVersion');
     return version;
+  }
+
+  @override
+  Future<void> setModelPath(String modelPath) async {
+    await methodChannel.invokeMethod<void>('setModelPath', modelPath);
   }
 }
