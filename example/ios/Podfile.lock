@@ -1,4 +1,6 @@
 PODS:
+  - camera_avfoundation (0.0.1):
+    - Flutter
   - Flutter (1.0.0)
   - flutter_paddle_lite (0.0.1):
     - Flutter
@@ -6,29 +8,40 @@ PODS:
   - integration_test (0.0.1):
     - Flutter
   - OpenCV (2.4.13.6)
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
 
 DEPENDENCIES:
+  - camera_avfoundation (from `.symlinks/plugins/camera_avfoundation/ios`)
   - Flutter (from `Flutter`)
   - flutter_paddle_lite (from `.symlinks/plugins/flutter_paddle_lite/ios`)
   - integration_test (from `.symlinks/plugins/integration_test/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
 
 SPEC REPOS:
   trunk:
     - OpenCV
 
 EXTERNAL SOURCES:
+  camera_avfoundation:
+    :path: ".symlinks/plugins/camera_avfoundation/ios"
   Flutter:
     :path: Flutter
   flutter_paddle_lite:
     :path: ".symlinks/plugins/flutter_paddle_lite/ios"
   integration_test:
     :path: ".symlinks/plugins/integration_test/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/darwin"
 
 SPEC CHECKSUMS:
+  camera_avfoundation: dd002b0330f4981e1bbcb46ae9b62829237459a4
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   flutter_paddle_lite: 1462b3e5ef5ee7289657b3bafd7787c286a2c37f
   integration_test: 252f60fa39af5e17c3aa9899d35d908a0721b573
   OpenCV: cd36a3467c21572d658c2640488fe0d5a93ca192
+  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
 
 PODFILE CHECKSUM: 6e700dec67e6deac9b1c69bb14c49a2217a12d15
 

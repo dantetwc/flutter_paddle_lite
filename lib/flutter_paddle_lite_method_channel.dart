@@ -17,7 +17,17 @@ class MethodChannelFlutterPaddleLite extends FlutterPaddleLitePlatform {
   }
 
   @override
-  Future<void> setModelPath(String modelPath) async {
-    await methodChannel.invokeMethod<void>('setModelPath', modelPath);
+  Future<String> createPredictor(String modelPath) async {
+    final predictor =
+        await methodChannel.invokeMethod<String>('createPredictor', modelPath);
+    return predictor!;
+  }
+
+  @override
+  Future<void> runOnImage(String instanceId, String imagePath) async {
+    await methodChannel.invokeMethod<void>('runOnImage', <String, String>{
+      'instanceId': instanceId,
+      'imagePath': imagePath,
+    });
   }
 }

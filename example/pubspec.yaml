@@ -16,6 +16,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  camera: ^0.11.0+2
+  path_provider: ^2.1.4
 
   flutter_paddle_lite:
     # When depending on this package from a real application you should use:
@@ -83,3 +85,5 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+  assets:
+    - models/
